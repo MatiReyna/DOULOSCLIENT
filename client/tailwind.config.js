@@ -1,12 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    drakMode: ["class"],
+export default {
+    darkMode: "class",
     content: [
-        "./pages/**/*.{js,jsx}",
-        "./components/**/*.{js,jsx}",
-        "./app/**/*.{js,jsx}",
+        "./index.html",
         "./src/**/*.{js,jsx}",
-        "*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         container: {
@@ -18,6 +15,12 @@ module.exports = {
         },
         extend: {
             colors: {
+                brand: {
+                    light: '#77BFA3',
+                    dark: '#001D3D',
+                    muted: '#212529',
+                    lightest: '#FEFCFB',
+                },
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",

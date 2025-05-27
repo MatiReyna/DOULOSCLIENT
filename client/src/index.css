@@ -3,10 +3,27 @@
 @tailwind utilities;
 
 @layer base {
-  * {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --border: 240 5.9% 90%;
+
+    --brand-light: 152 39% 61%;  /* #77BFA3 */
+    --brand-dark: 213 100% 12%;  /* #001D3D */
+    --brand-muted: 210 7% 14%;  /* #212529 */
+    --brand-lightest: 30 100% 99%;  /* #FEFCFB */
+  }
+
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 100%;
+    --border: 240 5.9% 26%;
+  }
+
+  /* * {
     @apply border-border;
-  }
-  body {
+  } */
+  /* body {
     @apply bg-background text-foreground;
-  }
+  } */
 }
