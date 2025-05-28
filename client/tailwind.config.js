@@ -1,18 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: "class",
-    content: [
-        "./index.html",
-        "./src/**/*.{js,jsx}",
-    ],
+    content: ["./index.html", "./src/**/*.{js,jsx, ts, tsx}", "*.{js,ts,jsx,tsx,mdx}"],
     theme: {
-        container: {
-            center: true,
-            padding: "2rem",
-            screens: {
-                "2xl": "1400px",
-            }
-        },
         extend: {
             colors: {
                 brand: {
@@ -62,12 +51,12 @@ export default {
             },
             keyframes: {
                 "accordion-down": {
-                    from: { height: 0 },
+                    from: { height: "0" },
                     to: { height: "var(--radix-accordion-content-height)" },
                 },
                 "accordion-up": {
                     from: { height: "var(--radix-accordion-content-height)" },
-                    to: { height: 0 },
+                    to: { height: "0" },
                 },
             },
             animation: {
@@ -76,5 +65,5 @@ export default {
             },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [],
 }
