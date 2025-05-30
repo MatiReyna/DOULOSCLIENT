@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: 'Inter', sans-serif;
+@layer base {
+    :root {
+        --brand-blue: 24 78 119; /* #184E77 */
+        --brand-gray: 53 53 53; /* #353535 */
+        --brand-green: 181 228 140; /* #B5E48C */
+        --brand-white: 255 255 255; /* #FFFFFF */
+    }
 }
